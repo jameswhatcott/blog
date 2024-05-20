@@ -2,6 +2,6 @@
     width: 400px;
 }
 
- input {
+ input, textarea {
     margin-bottom: 20px;
 }
