@@ -5,3 +5,7 @@
  input, textarea {
     margin-bottom: 20px;
 }
+
+textarea {
+    font-family: 'Times New Roman', Times, serif;
+}
