@@ -9,10 +9,9 @@
         <h1>Marketing Blog</h1>
         </header>
         <img id="marketingImage" src="./images/marketingImage.png"/>
-        <script src="./Assets/form.js"></script>
         <h3>Enter New Blog</h3>
         <br>
-        <form>
+        <form onsubmit="submitForm(event)">
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username">
             <br>
@@ -20,8 +19,9 @@
             <input type="text" id="title" name="title">
             <br>
             <label for="content">Content:</label><br>
-            <textarea rows=4 cols=50></textarea><br>
-            <input type="submit" id="content" name="content" value="Submit">
+            <textarea id="content" name="content" rows=4 cols=50></textarea><br>
+            <input type="submit" id="submitBtn" value="Submit">
         </form>
+        <script src="./Assets/js/form.js"></script>
     </body>
 </html>
