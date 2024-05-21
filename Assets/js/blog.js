@@ -15,9 +15,9 @@
 
  let backBtn = document.getElementById('backBtn');
 
- function comeBack (event) {
+ function goBack (event) {
     event.preventDefault();
-    window.location.href = 'index.html';
+    window.history.back()
     console.log('Redirecting back to main page');
  }
- backBtn.on('click', comeBack())
+ 
