@@ -13,12 +13,17 @@
     content: content
 };
 
+blogs.push(formValue);
+console.log(blogs);
+
 
  document.getElementById('usernameDisplay').textContent = 'Username: ' + username;
  document.getElementById('titleDisplay').textContent = 'Title: ' + title;
  document.getElementById('contentDisplay').textContent = 'Content: ' + content;
 
 // needs to create a new paragraph element with username, title and content, similar to above
+
+
 
 document.createElement('p');
 
