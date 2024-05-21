@@ -8,15 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
  let content = localStorage.getItem('content');
 
 
- let blogs = []
- let formValue = {
-    username: username, 
-    title: title, 
-    content: content
-};
 
-blogs.push(formValue);
-console.log(blogs);
 
 
  document.getElementById('usernameDisplay').textContent = 'Username: ' + username;

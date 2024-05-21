@@ -1,4 +1,4 @@
-document.getElementById('blogForm').addEventListener('submit', function(event) {
+function submitBlog (event) {
     event.preventDefault();
     console.log("Form submission prevented");
 
@@ -15,7 +15,6 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
         content: content,
     };
 
-    let entries = localStorage.getItem('blogEntries') || [];
 
     // Add the new entry to the array
     entries.push(blogEntry);
@@ -29,4 +28,4 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
     window.location.href = 'blog.html';
     console.log("Redirecting to blog.html");
 
-});
+};
