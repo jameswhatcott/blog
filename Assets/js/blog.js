@@ -36,7 +36,7 @@ document.createElement('p');
 
  function goBack (event) {
     event.preventDefault();
-    window.history.back()
+    window.location.href = 'index.html';
     console.log('Redirecting back to main page');
  }
  

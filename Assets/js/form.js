@@ -6,6 +6,14 @@ function submitForm(event) {
     let title = document.getElementById('title').value;
     let content = document.getElementById('content').value;
 
+    let values = localStorage.getItem('values') || [];
+    values.push(username);
+    values.push(title);
+    values.push(content);
+
+
+
+
 
     // Store them in local storage
     localStorage.setItem('name', username);
