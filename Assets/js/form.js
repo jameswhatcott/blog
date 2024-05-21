@@ -15,13 +15,13 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
         content: content,
     };
 
-    let entries = JSON.parse(localStorage.getItem('blogEntries')) || [];
+    let entries = localStorage.getItem('blogEntries') || [];
 
     // Add the new entry to the array
     entries.push(blogEntry);
 
     // Save the updated array back to localStorage
-    localStorage.setItem('blogEntries', JSON.stringify(entries));
+    localStorage.setItem('blogEntries', entries);
     console.log("Data stored in local storage");
 
 
