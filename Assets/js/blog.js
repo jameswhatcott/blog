@@ -1,4 +1,6 @@
- 
+
+document.addEventListener('DOMContentLoaded', function() {
+
 // Getting the content on the page
 
  let username = localStorage.getItem('name');
@@ -21,18 +23,13 @@ console.log(blogs);
  document.getElementById('titleDisplay').textContent = 'Title: ' + title;
  document.getElementById('contentDisplay').textContent = 'Content: ' + content;
 
+});
+
 // needs to create a new paragraph element with username, title and content, similar to above
 
 
 
-document.createElement('p');
-
-
-
-
  // Back button
-
- let backBtn = document.getElementById('backBtn');
 
  function goBack (event) {
     event.preventDefault();

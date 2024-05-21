@@ -1,28 +1,32 @@
-function submitForm(event) {
+document.getElementById('blogForm').addEventListener('submit', function(event) {
     event.preventDefault();
     console.log("Form submission prevented");
+
+
     // Get the input values
     let username = document.getElementById('username').value;
     let title = document.getElementById('title').value;
     let content = document.getElementById('content').value;
 
-    let values = localStorage.getItem('values') || [];
-    values.push(username);
-    values.push(title);
-    values.push(content);
 
+    let blogEntry = {
+        username: username,
+        title: title,
+        content: content,
+    };
 
+    let entries = JSON.parse(localStorage.getItem('blogEntries')) || [];
 
+    // Add the new entry to the array
+    entries.push(blogEntry);
 
-
-    // Store them in local storage
-    localStorage.setItem('name', username);
-    localStorage.setItem('title', title);
-    localStorage.setItem('content', content);
+    // Save the updated array back to localStorage
+    localStorage.setItem('blogEntries', JSON.stringify(entries));
     console.log("Data stored in local storage");
 
 
     // Redirect to display.html
     window.location.href = 'blog.html';
     console.log("Redirecting to blog.html");
-}
+
+});
