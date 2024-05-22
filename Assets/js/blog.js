@@ -29,6 +29,7 @@ content.textContent = 'Content: ' + blogEntries[i].content;
 
 blogEntry.append(username, title, content);
 main.append(blogEntry);
+
 }
 
 
