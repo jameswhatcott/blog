@@ -54,3 +54,5 @@ main.append(blogEntry);
     console.log('Redirecting back to main page');
  }
  
+
+
