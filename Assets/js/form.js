@@ -34,3 +34,6 @@ document.getElementById("blogForm").addEventListener("submit", function (event) 
     console.log("Redirecting to blog.html");
 
 });
+
+
+
