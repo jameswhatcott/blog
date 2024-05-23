@@ -1,9 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-// Getting the content on the page
-
-
  let blogEntries = localStorage.getItem('blogEntries');
  blogEntries = JSON.parse(blogEntries);
 
@@ -27,16 +24,13 @@ let content = document.createElement('p');
 content.className = 'content';
 content.textContent = 'Content: ' + blogEntries[i].content;
 
-blogEntry.append(username, title, content);
+let space = document.createElement('hr');
+
+blogEntry.append(username, title, content, space);
 main.append(blogEntry);
 
 }
 
-
-
- //document.getElementById('usernameDisplay').textContent = 'Username: ' + blogEntries[0].username;
- //document.getElementById('titleDisplay').textContent = 'Title: ' + blogEntries[0].title;
- //document.getElementById('contentDisplay').textContent = 'Content: ' + blogEntries[0].content;
 
  console.log(blogEntries);
 

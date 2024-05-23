@@ -21,10 +21,6 @@ document.getElementById("blogForm").addEventListener("submit", function (event) 
         content: content,
     };
 
-
-
-
-
     // Add the new entry to the array
     blogEntries.push(blogEntry);
     blogEntries = JSON.stringify(blogEntries);
