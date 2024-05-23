@@ -12,21 +12,22 @@ for(let i = 0; i < blogEntries.length; i++) {
 let blogEntry = document.createElement('section');
 blogEntry.className = 'blogEntry';
 
-let username = document.createElement('p');
-username.className = 'username';
-username.textContent = 'Username: ' + blogEntries[i].username;
-
-let title = document.createElement('p');
+let title = document.createElement('h3');
 title.className = 'title';
-title.textContent = 'Title: ' + blogEntries[i].title;
+title.textContent = blogEntries[i].title;
 
 let content = document.createElement('p');
 content.className = 'content';
-content.textContent = 'Content: ' + blogEntries[i].content;
+content.textContent = blogEntries[i].content;
+
+let username = document.createElement('p');
+username.className = 'username';
+username.textContent = 'Posted by ' + blogEntries[i].username;
+username.style.fontStyle = 'italic';
 
 let space = document.createElement('hr');
 
-blogEntry.append(username, title, content, space);
+blogEntry.append( title, content, username, space);
 main.append(blogEntry);
 
 }
